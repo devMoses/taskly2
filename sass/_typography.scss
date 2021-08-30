@@ -1,0 +1,10 @@
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+.tertiary {
+    &__paragraph {
+        width: 95%;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	 crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Invoice app</title>
+</head>
+<body>
+  <main>
+    <!-- Side Navigation  -->
+    <div class="navigation">
+      <!-- Navigation Logo box -->
+      <div class="navigation__logo-box">
+        <img class="navigation__logo" src="./assets/logo.svg" alt="Taskly Logo">
+      </div>
+      <!-- Bottom Half of Navigation that deals with user photo and theme -->
+      <div class="navigation__info">
+        <div class="navigation__theme">
+          <img src="./assets/icon-moon.svg" alt="" class="navigation__theme-moon">
+          <img src="./assets/icon-sun.svg" alt="" class="navigation__theme-sun">
+        </div>
+
+        <div class="navigation__user">
+          <img class="navigation__pic" src="./assets/image-avatar.jpg" alt="User profile picture and an anchor to the homepage">
+        </div>
+      </div>
+    </div>
+   
+    <div class="app__hero">
+      <div class="app">
+        <!-- App Header  -->
+       <header class="app__banner">
+         <div class="app_tasks">
+           <h2 id="task-header" class="primary__header">Tasksly</h2>
+           <label for="task-header" class="app__task-num">No Task</label>
+         </div>
+         <div class="app__buttons">
+           <div class="app__filter">
+             <options class="app_filter app__option">
+               Select filter 
+             
+             </options>
+             <img src="./assets/icon-arrow-down.svg" alt="" class="app__arrow">
+             <img src="./assets/icon-arrow-up.svg" alt="" class="hidden app__arrow">
+            </div>
+           <div class="app__add">
+             <a class="app__btn"href="#">
+               <div class="app__plus">
+                <img class="app__plus-img"src="./assets/icon-plus.svg"/> 
+               </div>
+               <span>New Task</span> </a>
+           </div>
+         </div>
+       </header>
+       <!-- App Display Task Display basically -->
+ 
+       <div class="app__display">
+         <ul class="app__lists">
+           <li class="app__item">
+            <div class="list-item" style="background-color: white;">
+              <div class="card_to">
+                <label for="">Assigned To</label>
+                <h5 class="mb-1">Moses Merete</h5>
+            </div>
+            <!-- due date -->
+            <div class="card_to">
+              <label for="">Due Date</label>
+              <h5 class="mb-1">July 26</h5>
+            </div>
+            <div class="card_to">
+              <label for="">Description</label>
+              <h5 class="mb-1">Edit html</h5>
+            </div>
+            <div class="card_to">
+              <label for="">Task Owner</label>
+              <h5 class="mb-1">Kourtni Virgin</h5>
+            </div>
+            <div class="card_to">
+              <label for="">Status</label>
+              <h5 class="mb-1">DONE</h5>
+            </div>
+            </div>
+
+
+           </li>
+           <!-- <div class="app__illustration">
+            <img class="app__img" src="./assets/illustration-empty.svg" alt="">
+            <h2 class="tertiary__header"> There is nothing here</h2>
+            <p class="tertiary__paragraph">
+              Create an invoice by clicking the button and get started
+              New Invoice
+            </p>
+           </div> -->
+         </ul>
+       
+       </div>
+     </div>
+    </div>
+    
+  </main>
+  <!--  -->
+  Invoices
+  There are <!-- Add number here --> total invoices
+
+  Filter by status
+  Draft
+  Pending
+  Paid
+  
+  New Invoice
+
+  <!-- No invoices -->
+  There is nothing here
+  
+  <!-- No invoices end -->
+
+  <!-- Create new invoice form -->
+  Go back
+
+  New Invoice
+  
+  Bill From
+  
+  Street Address
+  City
+  Post Code
+  Country
+  
+  Bill To
+  
+  Client's Name
+  Client's Email
+  e.g. email@example.com
+  Street Address
+  City
+  Post Code
+  Country
+  
+  Invoice Date
+  
+  Payment Terms
+  Net 1 day
+  Net 7 days
+  Net 14 days
+  Net 30 days
+  
+  Project Description
+  e.g. Graphic Design Service
+  
+  Item List
+  
+  Item Name
+  Qty.
+  Price
+  Total
+  
+  Add New Item
+  
+  Discard
+  Save as Draft
+  Save & Send
+  <!-- Create new invoice end -->
+  <div id="task-form" class="form-background">
+    <form id="form" class="form overflow-auto">
+      <h3 class="secondary__header">New Task</h3>
+     <!-- 2 column grid layout with text inputs for the first and last names -->
+     <h5 class="mt-6">Task Owner:</h5>
+     <div class="row mb-4">
+       <div class="col">
+         <div class="form-outline">
+           <label class="form-label" for="owner__first-name">First name</label>
+           <input type="text" id="owner__first-name" class="form-control" required/>
+           
+         </div>
+       </div>
+       <div class="col">
+         <div class="form-outline">
+           <label class="form-label" for="owner__last-name">Last name</label>
+           <input type="text" id="owner__last-name" class="form-control" required />
+           
+         </div>
+       </div>
+     </div>
+     <div class="form-outline mb-4">
+       <label class="form-label" for="task__description">Description</label>
+       <textarea class="form-control" id="task__description" rows="4" required></textarea>
+       
+     </div>
+     <!-- Assign To -->
+     <h5 class="mt-6">Assign To:</h5>
+     <div class="row mb-4">
+       <div class="col">
+         <div class="form-outline">
+           <label class="form-label" for="assign__first-name">First name</label>
+           <input type="text" id="assign__first-name" class="form-control" required/>
+           
+         </div>
+       </div>
+       <div class="col">
+         <div class="form-outline">
+           <label class="form-label" for="assign__last-name">Last name</label>
+           <input type="text" id="assign__last-name" class="form-control" required/>
+           
+         </div>
+       </div>
+     </div>
+     <!-- task date  -->
+     <div class="task__due-date"> 
+       <label for="task__date" class="col form-label">Due Date</label>
+       <input id="task__date" type="date" required>
+     </div>
+     <div class="button_row">
+       <div class="popup_button col">
+       <button type="submit" id="task__submit" class="bg-primary  primary_button">Submit</button>
+           </div>
+     </div>
+  <script src="./app.js"></script>
+</body>
+</html>

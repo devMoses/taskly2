@@ -1,0 +1,45 @@
+.form {
+    width: 41%;
+   
+    background: white;
+    padding: 3%;
+    border-top-right-radius: 3.5%;
+    border-bottom-right-radius: 3.5%;
+    height: 100vh;
+    z-index: 3;
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    
+    &-background {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,.8);
+        position: absolute;
+    top: 0;
+    left: -108%;
+        
+    }
+    
+}
+.form-control {
+    font-size: 2rem;
+}
+.task {
+    &__due-date {
+        align-self: center;
+        margin-bottom: 5%;
+    }
+}
+.button_row {
+    align-self: flex-end;
+}
+.primary_button {
+    width: 10rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: none;
+    align-self: flex-end;
+
+}
